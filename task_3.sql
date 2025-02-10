@@ -9,5 +9,5 @@ mydb=mysqlconnector.connect(
 
 mycursor=mydb.cursor()
 
-USE alx_books_store;
+USE alx_book_store;
 SHOW TABLES;
