@@ -26,7 +26,7 @@ mycursor.execute(""CREATE TABLE Authors IF NOT exists;
 print("Authors table created successfully")
 
 create a table called Customers (if not exists)
-mycursor.execute(""CREATE TABLE IF NOT exists
+mycursor.execute(""CREATE TABLE Customers IF NOT exists
 (  customer_id INT AUTO_INCREMENT PRIMARY KEY,
     customer_name VARCHAR(215) NOT NULL,
     email VARCHAR(215) UNIQUE NOT NULL,
@@ -35,7 +35,7 @@ mycursor.execute(""CREATE TABLE IF NOT exists
 print("Customers table created successfully")
 
 create a table called Orders (if not exists)
-mysqlcursor.execute(""CREATE TABLE IF NOT exists
+mysqlcursor.execute(""CREATE TABLE Orders IF NOT exists
     (order_id INT AUTO_INCREMENT PRIMARY KEY,
     customer_id INT,
     order_date DATE NOT NULL,
@@ -44,7 +44,7 @@ mysqlcursor.execute(""CREATE TABLE IF NOT exists
 print("Orders table created successfully")
 
 create a table called OrderItems (if not exists)
-mysqlcursor.execute(""CREATE TABLE IF NOT exists
+mysqlcursor.execute(""CREATE TABLE Order_Details IF NOT exists
    (orderdetailid INT AUTO_INCREMENT PRIMARY KEY,
     order_id INT,
     book_id INT,
