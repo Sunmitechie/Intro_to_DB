@@ -11,4 +11,4 @@ mycursor=mydb.cursor()
 
 USE alx_book_store;
 SHOW TABLES;
-SHOW COLUMNS FROM Books;
+SHOW COLUMNS FROM books;
